@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main() {
+ int number , temp , length , reversed_number{0};
+ cout<<"Enter a number: ";
+ cin>>number;
+ temp=number;
+ while(temp!=0){
+    reversed_number= reversed_number *10 + (temp%10);
+    temp/=10;
+ } 
+ cout<<reversed_number<<endl;
+ if(reversed_number == number){
+     cout<< "Plendrome";
+ }
+ else{
+     cout<<"Not plendrome";
+ }
+ return 0;
+}
